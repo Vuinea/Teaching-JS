@@ -1,0 +1,114 @@
+:root {
+  --light-top: rgb(61, 155, 181);
+  --light-background: rgb(230, 230, 230);
+  --light-accent: var(--light-top);
+  --light-card: #e0e0e0;
+  --light-current-lesson: #e91e63;
+  --light-shadow-color: black; 
+  --light-tr-second-color: #F06292;
+
+  /* dark purple: #6200EE */
+  /* light purple: #D500F9 */
+  /* teal: #03DAC6 */
+  --dark-top:#6200EE;
+  --dark-background: rgb(18, 18, 18);
+  --dark-accent: #D500F9 ;
+  --dark-card: rgba(255, 255, 255, 0.1);
+  --dark-current-lesson: #6200EE;
+  --dark-shadow-color: rgb(87, 87, 87);
+  --dark-tr-second-color: #FF8A65;
+}
+
+.light {
+  background: var(--light-background) !important;
+  --top: var(--light-top);
+  --accent: var(--light-accent);
+  --card: var(--light-card);
+  --current-lesson: var(--light-current-lesson);
+  --shadow-color: var(--light-shadow-color);
+  --table-border-color: rgb(194, 194, 194);
+  --tr-second-color: var(--light-tr-second-color);
+}
+
+.dark {
+  background: var(--dark-background) !important;
+  color: white;
+  --top: var(--dark-top);
+  --accent: var(--dark-accent);
+  --card: var(--dark-card);
+  --current-lesson: var(--dark-current-lesson);
+  --shadow-color: var(--dark-shadow-color);
+  --table-border-color: var(--dark-card);
+  --tr-second-color: var(--dark-tr-second-color);
+}
+
+body {
+  transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+}
+
+h1 {
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main > div {
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.form-control ~ button {
+  margin-top: 10px;
+}
+
+
+/* blackjack */
+
+#score {
+  text-align: center;
+  font-size: 20px;
+}
+
+.card {
+  text-align: center;
+}
+
+
+/* themes */
+
+#top {
+  padding: 20px 10px 0px 10px;
+  background: var(--top);
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+}
+
+#theme-btn {
+  margin-top: 10px;
+  height: fit-content;
+}
+
+a {
+  color: var(--tr-second-color) !important;
+  height: fit-content;
+}
+
+#theme-main {
+  padding-top: 30px;
+  display: flex;
+}
+
+#theme-main > div > h2 {
+  color: var(--accent);
+}
